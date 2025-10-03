@@ -1,3 +1,6 @@
+/*
+This is quite simillar to the last one, but instead of the problem being the gas limit, it is that a payment of an recipient could fail (intentionally or unintentionally) and that would result in the failing of the entire payments.
+*/
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
