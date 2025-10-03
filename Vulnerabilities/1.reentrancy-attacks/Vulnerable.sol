@@ -1,3 +1,7 @@
+/*
+A reentracy attack is one where an attacker can withdraw funds repeated time. This is because the updates are on the last place. Check the withdraw function from below.
+*/
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.30;
 
