@@ -1,0 +1,3 @@
+/*
+Always use true random generators that are almost impossible to predict.
+*/
