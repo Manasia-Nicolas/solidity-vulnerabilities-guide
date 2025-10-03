@@ -1,3 +1,6 @@
+/*
+Users pay gas when they call a function or do an action. The more operations needed, the higher the cost is. At some point the cost could be so high that the function can no longer be called.
+*/
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
