@@ -1,3 +1,6 @@
+/*
+This happens when something that should be random is determinated by timestamps or blockhash. The problem is that these things are quite predictable and people can use them in their advantage.
+*/
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
