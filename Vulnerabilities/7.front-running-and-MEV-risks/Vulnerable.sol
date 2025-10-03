@@ -6,6 +6,14 @@ Front-running = someone (bot/miner/validator) observes a pending transaction in 
 MEV (Miner/Maximal Extractable Value) = the profit that miners/validators (or searchers working with them) can extract by ordering, including, excluding, or censoring transactions in a block. MEV includes front-running, sandwiching, back-running, liquidation arbitrage, and more complex reordering strategies.
 
 Aka an attacker can see an order that would impact the price, and if he place an call with higher gas, it will be places first. The initial order would be bought at a higher price and the attacker can after sell and take a profit.
+
+There are a lot of cases of attacks, but I will describe sandwich.
+
+Attacker strategy for a sandwich:
+1. See User’s pending buyToken() for 10 ETH in mempool.
+2. Front-run: Attacker submits buyToken() with, say, 1 ETH at higher gas so it executes before user. This moves the price up.
+3. User’s transaction executes at worse price (gets fewer tokens).
+4. Back-run: Attacker executes sellToken() (or effectively convert tokens back off-contract) after the user’s transaction to capture profit.
 */
 / SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
